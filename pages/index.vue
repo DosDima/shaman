@@ -1,7 +1,46 @@
 <template>
-  <div>
-
+  <div class="wrapper">
+    <h1 style="font-size: 11em;">
+      hello!
+    </h1>
+    <h1 style="font-size: 11em;">
+      hello!
+    </h1>
+    <h1 style="font-size: 11em;">
+      hello!
+    </h1>
+    <h1 style="font-size: 11em;">
+      hello!
+    </h1>
+    <h1 style="font-size: 11em;">
+      hello!
+    </h1>
+    <h1 style="font-size: 11em;">
+      hello!
+    </h1>
+    <h1 style="font-size: 11em;">
+      hello!
+    </h1>
+    <h1 style="font-size: 11em;">
+      hello!
+    </h1>
+    <h1 style="font-size: 11em;">
+      hello!
+    </h1>
+    <h1 style="font-size: 11em;">
+      hello!
+    </h1>
+    <h1 style="font-size: 11em;">
+      hello!
+    </h1>
+    <h1 style="font-size: 11em;">
+      hello!
+    </h1>
+    <h1 style="font-size: 11em;">
+      hello!
+    </h1>
   </div>
+
 </template>
 
 <script setup lang="ts">
@@ -18,3 +57,8 @@ definePageMeta({
 })
 
 </script>
+
+<style scoped>
+
+
+</style>
