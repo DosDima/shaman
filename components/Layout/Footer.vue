@@ -1,20 +1,21 @@
 <template>
-  <footer>
-  </footer>
+    <footer>
+      <div>
+        sdasds
+      </div>
+    </footer>
 </template>
 
 <script setup lang="ts">
 
 </script>
 
-
 <style scoped>
-footer{
-  background-color: #191919;
-  width: 100%;
-  min-height: 108px;
-  height: 100px;
-  max-height: fit-content;
+footer {
+  background: radial-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
+  min-height: var(--h-footer);
+  height: var(--h-footer);
+  max-height: var(--h-footer);
 }
 
 </style>

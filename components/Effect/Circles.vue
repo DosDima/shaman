@@ -18,14 +18,11 @@
 
 <style scoped>
 .area {
-  background: var(--color-background);
-  background: -webkit-linear-gradient(
-    to left,
-    var(--color-background),
-    #d4d4d4
-  );
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  min-width: 100%;
+  background: rgba(0,0,0,0);
   z-index: -1;
 }
 
@@ -35,7 +32,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   z-index: -1;
 }
 
@@ -45,7 +41,7 @@
   list-style: none;
   width: 20px;
   height: 20px;
-  background: var(--color-circle);
+  background: black;
   animation: animate 25s linear infinite;
   bottom: -150px;
 }

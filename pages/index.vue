@@ -1,46 +1,11 @@
 <template>
-  <div class="wrapper">
-    <h1 style="font-size: 11em;">
-      hello!
-    </h1>
-    <h1 style="font-size: 11em;">
-      hello!
-    </h1>
-    <h1 style="font-size: 11em;">
-      hello!
-    </h1>
-    <h1 style="font-size: 11em;">
-      hello!
-    </h1>
-    <h1 style="font-size: 11em;">
-      hello!
-    </h1>
-    <h1 style="font-size: 11em;">
-      hello!
-    </h1>
-    <h1 style="font-size: 11em;">
-      hello!
-    </h1>
-    <h1 style="font-size: 11em;">
-      hello!
-    </h1>
-    <h1 style="font-size: 11em;">
-      hello!
-    </h1>
-    <h1 style="font-size: 11em;">
-      hello!
-    </h1>
-    <h1 style="font-size: 11em;">
-      hello!
-    </h1>
-    <h1 style="font-size: 11em;">
-      hello!
-    </h1>
-    <h1 style="font-size: 11em;">
-      hello!
-    </h1>
+  <div>
+    <section>
+      <h1 style="font-size: 2em; color: rgba(211,207,145,0.9)">
+        Шаманское погружение-ретрит "Родной.Для себя.
+      </h1>
+    </section>
   </div>
-
 </template>
 
 <script setup lang="ts">
@@ -59,6 +24,14 @@ definePageMeta({
 </script>
 
 <style scoped>
+section{
+  height: calc(100vh - var(--h-footer));
+  padding-top: 108px;
+  background-image: url("../public/picture/woman_in_forest_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 
 </style>

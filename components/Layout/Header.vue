@@ -1,13 +1,25 @@
 <template>
   <header>
     <nav>
-      <div>Logo</div>
+      <RouterLink to="/">
+        <div class="logo">Logo</div>
+      </RouterLink>
       <ul>
-        <li>Ретрит</li>
-        <li>Программа</li>
-        <li>Практики</li>
-        <li>О нас</li>
-        <li>Как добраться</li>
+        <RouterLink to="/">
+          <li>События</li>
+        </RouterLink>
+        <RouterLink to="/program">
+          <li>Программа</li>
+        </RouterLink>
+        <RouterLink to="/practice">
+          <li>Практики</li>
+        </RouterLink>
+        <RouterLink to="/about">
+          <li>О нас</li>
+        </RouterLink>
+        <RouterLink to="/info">
+          <li>Как добраться</li>
+        </RouterLink>
       </ul>
     </nav>
   </header>
@@ -30,25 +42,40 @@ header {
   height: 64px;
   min-width: 100%;
   max-width: 100%;
-  background-color: var(--vt-c-white-mute);
+  background: radial-gradient(at 100% 30%, #c1bf68 10px, rgba(126, 126, 126, 0.5) 30%, rgba(255, 255, 255, 0.1) 50%);
 }
-nav{
+
+nav {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.logo {
+  color: #e4dc80;
+  font-size: 2rem;
+  margin-left: 1em;
 
 }
-ul{
+
+ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-li{
+li {
   padding: 16px;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+li:hover {
+  color: #e4dc80;
 }
 
 </style>
