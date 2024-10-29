@@ -24,7 +24,9 @@ footer {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  background: radial-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
+  padding: 4px;
+  background: rgb(9, 9, 9);
+  background: linear-gradient(0deg, rgba(9, 9, 9, 1) 50%, rgba(18, 18, 18, .9) 100%);
   min-height: var(--h-footer);
   height: var(--h-footer);
   max-height: var(--h-footer);
@@ -38,21 +40,21 @@ footer {
 }
 
 .icon {
-  color: var(--color-mute);
+  color: var(--color-primary);
   font-size: 32px;
   margin: 0 .1em 0 .1em;
   cursor: pointer;
 }
 
 .icon:hover {
-  color: var(--color-primary);
+  color: var(--color-mute);
 
 }
 
 .footer__text {
   font-size: 3em;
-  color: var(--color-mute);
   white-space: nowrap;
+  opacity: 0.4;
 }
 
 </style>

@@ -1,7 +1,7 @@
 :root {
     --color-primary: #344f2f;
     --color-secondeary: #6e8744;
-    --color-mute: #a2a667;
+    --color-mute: #bdc17b;
     --color-bg-secondary: #d1cba7;
     --color-bg-primary: #f2eeeb;
 
@@ -10,6 +10,7 @@
     --color-danger: #752a5f;
     --color-text: #515050;
     --h-footer: 54px;
+    --h-header: 64px;
 }
 
 * {
