@@ -17,8 +17,8 @@
   min-width: 320px;
   min-height: 320px;
   padding: 1em;
-  background-color: var(--color-background-mute);
-  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-secondeary);
   border-radius: 1em;
   -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);

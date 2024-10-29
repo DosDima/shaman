@@ -69,15 +69,15 @@ const localComputed = computed({
 input {
   width: 100%;
   min-width: 100%;
-  color: var(--color-text);
-  background-color: var(--color-background-soft);
+  color: var(--color-primary);
+  background-color: var(--color-bg-secondary);
   font-size: 2rem;
   border-radius: .2em;
-  border-color: var(--color-border);
+  border-color: var(--color-secondeary);
 }
 
 input:focus {
-  border-color: var(--color-border-hover);
+  border-color: var(--color-primary);
 }
 
 input:invalid {
