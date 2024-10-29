@@ -50,6 +50,7 @@ header {
   max-width: 100%;
   background: rgb(9, 9, 9);
   background: linear-gradient(270deg, rgba(9, 9, 9, 0.9) 50%, rgba(255, 255, 255, 0) 100%);
+  z-index: 777;
 }
 
 nav {
@@ -79,6 +80,7 @@ ul {
   background: rgb(9, 8, 9);
   background: linear-gradient(90deg, rgba(9, 8, 9, .9) 50%, rgba(255, 255, 255, 0) 100%);
   transition: all 1s;
+  z-index: 0;
 }
 
 .ul_active {
