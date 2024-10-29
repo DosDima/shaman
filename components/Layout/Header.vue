@@ -42,7 +42,6 @@ header {
   height: 64px;
   min-width: 100%;
   max-width: 100%;
-  background: radial-gradient(at 100% 30%, #c1bf68 10px, rgba(126, 126, 126, 0.5) 30%, rgba(255, 255, 255, 0.1) 50%);
 }
 
 nav {
@@ -54,7 +53,7 @@ nav {
 }
 
 .logo {
-  color: #e4dc80;
+  color: var(--color-mute);
   font-size: 2rem;
   margin-left: 1em;
 
@@ -69,7 +68,7 @@ ul {
 
 li {
   padding: 16px;
-  color: white;
+  color: var(--color-mute);
   font-size: 1.5em;
   cursor: pointer;
 }
