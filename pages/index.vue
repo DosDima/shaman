@@ -8,7 +8,7 @@
           </template>
           <template #card__main>
             <h2>
-              Дата: 22.11.-24.11.2024
+              Дата: 22-24 ноября 2024г
             </h2>
             <h2>
               Стоимость: 22 004 руб.
@@ -40,7 +40,7 @@
       <template #section__content>
         <div class="card__text">
           <h2>𐔀аманское погружение-ретрит</h2>
-          <h1>&#171;Родной. Для себя&#187;</h1>
+          <h1 class="text-h1">&#171;Родной. Для себя&#187;</h1>
         </div>
         <div class="card__wrapper"></div>
         <div class="card__text">
@@ -70,8 +70,8 @@
           </h2>
         </div>
         <KitButton
+            class="btn__reg text-h1"
             text="Записаться"
-            class="btn__reg"
             @click-on-btn="isOpenModal = !isOpenModal"
         />
       </template>
@@ -139,11 +139,11 @@ const isOpenModal = ref(false)
 
 
 .section__index {
-  padding-top: 108px;
   background-image: url("../public/picture/woman_in_forest_1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 64px 0 64px 0;
 }
 
 .card__wrapper {
@@ -157,7 +157,6 @@ const isOpenModal = ref(false)
   border-radius: 2em;
   width: 475px;
   padding: 12px;
-
 }
 
 .card__text {
@@ -172,13 +171,10 @@ const isOpenModal = ref(false)
 
 }
 
-h1 {
-  font-family: "Noto Sans Elbasan", serif;
+.text-h1 {
   font-size: 1.8em;
   font-weight: 400;
-  background: linear-gradient(90deg, var(--color-mute) 20%, #d1cba7 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #d6c689;
   text-shadow: #d6c689 1px 0 10px;
 }
 
