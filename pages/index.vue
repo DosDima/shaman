@@ -55,7 +55,7 @@
         <KitButton
             class="btn__reg text-h1"
             text="Записаться"
-            @click-on-btn="isOpenModal = !isOpenModal"
+            @click.stop="isOpenModal = true"
         />
       </template>
     </KitSection>
@@ -149,7 +149,7 @@ const isOpenModal = ref(false)
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(0.5em);
   border-radius: 2em;
-
+  cursor: pointer;
 }
 
 .text-h1 {
