@@ -2,27 +2,10 @@
   <div>
     <KitOverlay v-model="isOpenModal">
       <template #overlay__content>
-        <KitCard class="card__reg">
-          <template #card__header>
-            <div></div>
-          </template>
+        <KitCard class="card__reg" style="margin: 8px">
           <template #card__main>
-            <h2>
-              Дата: 22-24 ноября 2024г
-            </h2>
-            <h2>
-              Стоимость: 22 004 руб.
-            </h2>
-            <h2>
-              Что включено в стоимость:<br/>
-              • Проживание в комфортабельном номере<br/>
-              • 3-х разовое питание<br/>
-              • Баня/Чан<br/>
-              Место проведения: Тверская область<br/>
-              "Медведица Шанти" дом Ганеша<br/>
-            </h2>
             <h2 style="text-align: center">
-              Свяжитесь со мной, удобным для Вас способом!
+              Свяжитесь со мной,<br/> удобным для Вас способом!
             </h2>
           </template>
           <template #card__footer>
@@ -103,7 +86,7 @@ const isOpenModal = ref(false)
 
 <style scoped>
 
-.icon__wrapper{
+.icon__wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -121,8 +104,6 @@ const isOpenModal = ref(false)
 .icon:hover {
   color: var(--color-mute);
 }
-
-
 
 .btn__reg {
   margin: 1em 0.2em 0.2em 0.2em;

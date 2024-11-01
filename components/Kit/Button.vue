@@ -61,11 +61,9 @@ defineProps({
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
   letter-spacing: .1em;
   font-weight: 700;
   cursor: pointer;
-  width: 100%;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
