@@ -23,13 +23,32 @@ html, body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    overflow-y: auto;
     font-size: inherit;
     font-family: "Noto Sans Elbasan", serif;
     font-weight: 400;
     font-style: normal;
     color: var(--color-primary);
+
 }
+
+/* width */
+body::-webkit-scrollbar {
+    width: 8px;
+    background: var(--color-primary);
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 2px;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: var(--color-secondeary);
+    border-radius: 4px;
+}
+
 
 *,
 *::before,
@@ -110,24 +129,3 @@ label {
 legend {
     display: block;
 }
-
-
-html {
-    scrollbar-color: rgba(211, 202, 133, 0.8) rgba(179, 172, 172, 0.2);
-}
-
-html::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-}
-
-html::-webkit-scrollbar-thumb {
-    background: #3aafaf;
-}
-
-html::-webkit-scrollbar-track {
-    background: #8345ac;
-}
-
-
-
