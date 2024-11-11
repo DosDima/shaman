@@ -10,14 +10,14 @@ definePageMeta({
   ],
 })
 
-const imageSrc = ref('../public/picture/lina_1.jpg')
+const imageSrc = ref('/picture/lina_1.jpg')
 const photoCounter = ref(1)
 const nextPhoto = () => {
   photoCounter.value++
   if (photoCounter.value > 5) {
     photoCounter.value = 1
   }
-  imageSrc.value = `../public/picture/lina_${photoCounter.value}.jpg`
+  imageSrc.value = `/picture/lina_${photoCounter.value}.jpg`
 
 }
 const prevPhoto = () => {
@@ -25,7 +25,7 @@ const prevPhoto = () => {
   if (photoCounter.value < 0) {
     photoCounter.value = 5
   }
-  imageSrc.value = `../public/picture/lina_${photoCounter.value}.jpg`
+  imageSrc.value = `/picture/lina_${photoCounter.value}.jpg`
 }
 </script>
 
@@ -34,11 +34,10 @@ const prevPhoto = () => {
     <template #section__content>
       <div class="about__card">
         <div class="img__wrapper">
-          <NuxtImg
+          <img
               class="img"
               :src="imageSrc"
           >
-          </NuxtImg>
           <Icon class="img__icon img__icon_prev" name="uil:arrow-left" @click.self="prevPhoto"/>
           <Icon class="img__icon img__icon_next" name="uil:arrow-right" @click.self="nextPhoto"/>
         </div>
@@ -141,6 +140,7 @@ const prevPhoto = () => {
     flex-direction: row;
     max-width: 1280px !important;
   }
+
   .img {
     width: 420px;
   }

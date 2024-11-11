@@ -119,6 +119,7 @@ legend {
     display: block;
 }
 
+
 @media screen and (min-width: 768px) and (orientation: landscape) {
     /* width */
     body::-webkit-scrollbar {

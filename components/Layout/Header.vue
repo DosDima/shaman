@@ -2,20 +2,20 @@
   <header>
     <nav>
       <RouterLink to="/">
-        <div class="logo">𐔁𐔀𐔒𐔎𐔇𐔔</div>
+        <div class="logo" @click.self="isOpenNavMenu=false">𐔁𐔀𐔒𐔎𐔇𐔔</div>
       </RouterLink>
       <ul :class="{ul_active: isOpenNavMenu }">
+        <RouterLink to="/">
+          <li @click.self="burgerClickHandler">𐔄лавная</li>
+        </RouterLink>
         <RouterLink to="/schedule">
           <li @click.self="burgerClickHandler">𐔠рограмма</li>
         </RouterLink>
-        <RouterLink to="/practice">
-          <li @click.self="burgerClickHandler">𐔠рактики</li>
-        </RouterLink>
-        <RouterLink to="/about">
+        <RouterLink to="/lina-pro-svet">
           <li @click.self="burgerClickHandler">𐔠роводник</li>
         </RouterLink>
         <RouterLink to="/info">
-          <li @click.self="burgerClickHandler">𐔠уть</li>
+          <li @click.self="burgerClickHandler">Информаци𐔈</li>
         </RouterLink>
       </ul>
     </nav>

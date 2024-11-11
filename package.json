@@ -1,18 +1,17 @@
 {
-  "name": "nuxt-app",
+  "name": "shamanictravel",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt generate",
-    "dev": "nuxt dev"
+    "dev": "nuxt dev",
+    "build": "nuxt generate"
   },
   "dependencies": {
     "@nuxt/icon": "^1.6.1",
-    "@nuxt/image": "^1.8.1",
     "@nuxtjs/google-fonts": "^3.2.0",
     "nuxt": "^3.13.2",
-    "vue": "latest",
-    "vue-router": "latest"
+    "vue": "3.5.12",
+    "vue-router": "4.4.5"
   },
   "devDependencies": {
     "@nuxt/eslint": "^0.6.0",

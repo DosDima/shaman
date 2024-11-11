@@ -1,3 +1,32 @@
+<script setup lang="ts">
+
+definePageMeta({
+  layout: "default",
+  middleware: [
+    function () {
+      clearNuxtState()
+      clearNuxtData()
+    },
+  ],
+})
+
+useSeoMeta({
+  title: 'Родной. Для себя.',
+  ogTitle: 'Родной. Для себя.',
+  description: 'Ретрит. Шаманские практики. Ретриты в Санкт-Петербурге и Москве, погружение в медитативную практику. Запись на сайте и по телефону: +7 (915) 444-36-86',
+  ogDescription: 'Ретрит. Шаманские практики. Ретриты в Санкт-Петербурге и Москве, погружение в медитативную практику. Запись на сайте и по телефону: +7 (915) 444-36-86',
+  ogUrl: 'https://shamanictravel.ru/',
+})
+
+const cellInstagram = () => window.open(`https://www.instagram.com/lina_prosvet?igsh=MWhmcTN1OThpZDI0cw%3D%3D&utm_source=qr`)
+const cellTelegram = () => window.open(`https://t.me/@shakti_lady`)
+const callPhone = () => window.open(`tel:89154443686`)
+const cellWhatsapp = () => window.open(`https://wa.me/89154443686`)
+
+const isOpenModal = ref(false)
+
+</script>
+
 <template>
   <div>
     <KitOverlay v-model="isOpenModal">
@@ -61,30 +90,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
-
-definePageMeta({
-  layout: "default",
-  title: "Index Page",
-  middleware: [
-    function () {
-      clearNuxtState()
-      clearNuxtData()
-    },
-  ],
-})
-
-const cellInstagram = () => window.open(`https://www.instagram.com/lina_prosvet?igsh=MWhmcTN1OThpZDI0cw%3D%3D&utm_source=qr`)
-const cellTelegram = () => window.open(`https://t.me/@shakti_lady`)
-const callPhone = () => window.open(`tel:89154443686`)
-const cellWhatsapp = () => window.open(`https://wa.me/89154443686`)
-
-const isOpenModal = ref(false)
-
-</script>
-
 <style scoped>
-
 .icon__wrapper {
   display: flex;
   flex-direction: row;
