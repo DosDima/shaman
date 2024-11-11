@@ -22,7 +22,7 @@ const nextPhoto = () => {
 }
 const prevPhoto = () => {
   photoCounter.value--
-  if (photoCounter.value < 0) {
+  if (photoCounter.value <= 0) {
     photoCounter.value = 5
   }
   imageSrc.value = `/picture/lina_${photoCounter.value}.jpg`
@@ -37,6 +37,7 @@ const prevPhoto = () => {
           <img
               class="img"
               :src="imageSrc"
+              alt="Шаманка играет в бубен"
           >
           <Icon class="img__icon img__icon_prev" name="uil:arrow-left" @click.self="prevPhoto"/>
           <Icon class="img__icon img__icon_next" name="uil:arrow-right" @click.self="nextPhoto"/>
