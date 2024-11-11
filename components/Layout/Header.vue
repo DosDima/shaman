@@ -5,17 +5,17 @@
         <div class="logo">𐔁𐔀𐔒𐔎𐔇𐔔</div>
       </RouterLink>
       <ul :class="{ul_active: isOpenNavMenu }">
-        <RouterLink to="/program">
-          <li>𐔠рограмма</li>
+        <RouterLink to="/schedule">
+          <li @click.self="burgerClickHandler">𐔠рограмма</li>
         </RouterLink>
         <RouterLink to="/practice">
-          <li>𐔠рактики</li>
+          <li @click.self="burgerClickHandler">𐔠рактики</li>
         </RouterLink>
         <RouterLink to="/about">
-          <li>𐔠роводник</li>
+          <li @click.self="burgerClickHandler">𐔠роводник</li>
         </RouterLink>
         <RouterLink to="/info">
-          <li>𐔠уть</li>
+          <li @click.self="burgerClickHandler">𐔠уть</li>
         </RouterLink>
       </ul>
     </nav>
@@ -79,7 +79,7 @@ ul {
   height: 100vh;
   background: rgb(9, 8, 9);
   background: linear-gradient(90deg, rgba(9, 8, 9, .9) 50%, rgba(255, 255, 255, 0) 100%);
-  transition: all 1s;
+  transition: all .5s;
   z-index: 0;
 }
 

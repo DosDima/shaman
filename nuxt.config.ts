@@ -3,7 +3,7 @@ export default defineNuxtConfig({
     compatibilityDate: '2024-04-03',
     devtools: {enabled: false},
     ssr: false,
-    modules: ["@nuxt/eslint", '@nuxt/icon', '@nuxtjs/google-fonts'],
+    modules: ["@nuxt/eslint", '@nuxt/icon', '@nuxtjs/google-fonts', '@nuxt/image'],
     css: ["~/assets/css/main.css"],
     typescript: {
         typeCheck: true
