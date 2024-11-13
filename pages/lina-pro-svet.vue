@@ -1,17 +1,15 @@
 <script setup lang="ts">
-definePageMeta({
-  layout: "default",
-  title: "Index Page",
-  middleware: [
-    function () {
-      clearNuxtState()
-      clearNuxtData()
-    },
-  ],
+useSeoMeta({
+  title: 'Лина ПроСвет',
+  ogTitle: 'Лина ПроСвет',
+  description: 'Лина ПроСвет. Шаманка. Энерготерапевт. Саунд-хилер. Арт-теропевт',
+  ogDescription: 'Лина ПроСвет. Шаманка. Энерготерапевт. Саунд-хилер. Арт-теропевт',
+  ogUrl: 'https://shamanictravel.ru/lina-pro-svet',
 })
-
 const imageSrc = ref('/picture/lina_1.jpg')
+const show = ref(true)
 const photoCounter = ref(1)
+
 const nextPhoto = () => {
   photoCounter.value++
   if (photoCounter.value > 5) {
@@ -20,6 +18,7 @@ const nextPhoto = () => {
   imageSrc.value = `/picture/lina_${photoCounter.value}.jpg`
 
 }
+
 const prevPhoto = () => {
   photoCounter.value--
   if (photoCounter.value <= 0) {
@@ -35,6 +34,7 @@ const prevPhoto = () => {
       <div class="about__card">
         <div class="img__wrapper">
           <img
+              :key="imageSrc"
               class="img"
               :src="imageSrc"
               alt="Шаманка играет в бубен"
@@ -85,21 +85,23 @@ const prevPhoto = () => {
 .img__wrapper {
   position: relative;
   border-radius: 1em;
+  min-height: 586px;
 }
 
 .img {
   min-width: 100%;
   height: auto;
+  transform-origin: bottom;
 }
 
 .about__card__text {
-  padding: 0 1em 1em 1em;
+  padding: 0 .5em .5em .5em;
 }
 
 .text__title {
   width: 100%;
+  margin-bottom: .5em;
   text-align: center;
-  margin-bottom: 1em;
   font-size: 2em;
   font-weight: 400;
   letter-spacing: .1em;
@@ -108,7 +110,7 @@ const prevPhoto = () => {
 }
 
 .text__subtitle {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 400;
   color: #d6c689;
   text-shadow: #d6c689 1px 0 10px;

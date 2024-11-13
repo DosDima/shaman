@@ -1,1 +1,3 @@
-
+User-agent: *
+Allow: /
+Sitemap: https://shamanictravel.ru/sitemap.xml

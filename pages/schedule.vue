@@ -1,5 +1,11 @@
 <script setup lang="ts">
-
+useSeoMeta({
+  title: 'Расписание. Родной. Для себя.',
+  ogTitle: 'Расписание. Родной. Для себя.',
+  description: 'Ретрит. Шаманские практики. Расписание ретрита.',
+  ogDescription: 'Ретрит. Шаманские практики. Расписание ретрита.',
+  ogUrl: 'https://shamanictravel.ru/schedule',
+})
 </script>
 
 <template>
@@ -73,17 +79,19 @@
   margin-bottom: .2em;
 }
 
-.day__text{
-  font-size: 1em;
+.day__text {
+  font-size: 14px;
   font-weight: bolder;
   margin-bottom: .1em;
-
 }
 
 @media screen and (min-width: 1280px) and (orientation: landscape) {
   .day__title {
     font-size: 2em;
+  }
 
+  .day__text {
+    font-size: 18px;
   }
 }
 

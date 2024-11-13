@@ -1,15 +1,4 @@
 <script setup lang="ts">
-
-definePageMeta({
-  layout: "default",
-  middleware: [
-    function () {
-      clearNuxtState()
-      clearNuxtData()
-    },
-  ],
-})
-
 useSeoMeta({
   title: 'Родной. Для себя.',
   ogTitle: 'Родной. Для себя.',
@@ -153,7 +142,7 @@ const isOpenModal = ref(false)
 
 h2 {
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 14px;
   color: var(--color-bg-secondary);
   text-shadow: #FC0 1px 0 10px;
   padding: 8px;
@@ -161,7 +150,7 @@ h2 {
 
 h3 {
   font-weight: 400;
-  font-size: 0.6em;
+  font-size: 12px;
   color: var(--color-bg-secondary);
   text-shadow: #FC0 1px 0 10px;
   padding: 8px;

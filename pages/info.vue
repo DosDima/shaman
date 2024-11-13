@@ -1,20 +1,10 @@
 <script setup lang="ts">
-definePageMeta({
-  layout: "default",
-  middleware: [
-    function () {
-      clearNuxtState()
-      clearNuxtData()
-    },
-  ],
-})
-
 useSeoMeta({
-  title: 'Родной. Для себя.',
-  ogTitle: 'Родной. Для себя.',
-  description: 'Ретрит. Шаманские практики. Ретриты в Санкт-Петербурге и Москве, погружение в медитативную практику. Запись на сайте и по телефону: +7 (915) 444-36-86',
-  ogDescription: 'Ретрит. Шаманские практики. Ретриты в Санкт-Петербурге и Москве, погружение в медитативную практику. Запись на сайте и по телефону: +7 (915) 444-36-86',
-  ogUrl: 'https://shamanictravel.ru/',
+  title: 'Информация. Родной. Для себя.',
+  ogTitle: 'Информация. Родной. Для себя.',
+  description: 'Ретрит. Подробная информация о ретрите.',
+  ogDescription: 'Ретрит. Подробная информация о ретрите.',
+  ogUrl: 'https://shamanictravel.ru/info',
 })
 
 const cellInstagram = () => window.open(`https://www.instagram.com/lina_prosvet?igsh=MWhmcTN1OThpZDI0cw%3D%3D&utm_source=qr`)
