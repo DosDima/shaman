@@ -9,7 +9,7 @@
           <li @click.self="burgerClickHandler">𐔄лавная</li>
         </RouterLink>
         <RouterLink to="/schedule">
-          <li @click.self="burgerClickHandler">𐔠рограмма</li>
+          <li @click.self="burgerClickHandler">Про𐔏рамма</li>
         </RouterLink>
         <RouterLink to="/lina-pro-svet">
           <li @click.self="burgerClickHandler">𐔠роводник</li>

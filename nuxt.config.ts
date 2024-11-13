@@ -9,6 +9,7 @@ export default defineNuxtConfig({
         typeCheck: true
     },
     app: {
+        pageTransition: { name: 'page', mode: 'out-in' },
         head: {
             charset: 'utf-8',
             viewport: 'width=device-width, initial-scale=1',
@@ -24,6 +25,10 @@ export default defineNuxtConfig({
             link: [
                 {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+Elbasan&display=swap'},
                 {rel: 'canonical', href: 'https://shamanictravel.ru/'},
+                {rel: 'apple-touch-icon', sizes: "180x180", href: '/apple-touch-icon.png'},
+                {rel: 'icon', sizes: "32x32", href: '/favicon-32x32.png'},
+                {rel: 'icon', sizes: "16x16", href: '/favicon-16x16.png'},
+                {rel: 'manifest', href: '/site.webmanifest'},
             ],
         }
     }
